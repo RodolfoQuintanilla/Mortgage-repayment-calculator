@@ -54,3 +54,5 @@ function limpiar() {
     radioUno.checked = false;
     radioDos.checked = false;
 }
+
+/* Fata validaciones */ 

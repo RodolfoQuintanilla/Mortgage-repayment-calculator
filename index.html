@@ -30,33 +30,40 @@
 
 
     <section class="boxUno">
-      <h1> Calculadora de hipotecas</h1>
-      <input type="button" value="Limpiar todo" onClick ="limpiar()">
-      <div>
-        <label>Monto de la hipoteca</label>
-        <br>
-        <input type="number" name="" id="numeUno">
+      <div class="boxUno__head">
+        <h1> Calculadora de hipotecas</h1>
+        <input type="button" value="Limpiar Todo" onClick="limpiar()">
       </div>
 
       <div>
-        <label>Plazo de la hipoteca</label>
+        <label>Monto de la hipoteca</label>
         <br>
-        <select id="select1" onChange="">
-          <option value="12">12 Meses</option>
-          <option value="24">24 Meses</option>
-          <option value="36">36 Meses</option>
-          <option value="48">48 Meses</option>
-        </select>
-        <br>
-        <label>Tasa de interés</label>
-        <br>
-        <input type="number" name="" id="numTres" disabled>
+        <input class="boxUno__numeUno" type="number" name="" id="numeUno">
+      </div>
+
+      <div class="boxUno__info">
+        <div>
+          <label>Plazo de la hipoteca</label>
+          <br>
+          <select id="select1">
+            <option value="12">12 Meses</option>
+            <option value="24">24 Meses</option>
+            <option value="36">36 Meses</option>
+            <option value="48">48 Meses</option>
+          </select>
+        </div>
+        <div>
+          <label>Tasa de interés</label>
+          <br>
+          <input type="number" name="" id="numTres" disabled>
+        </div>
       </div>
 
       <div>
         <h2>Tipo de hipoteca</h2>
+
         <input type="radio" id="radioUno" name="tipo">Reembolso
-        
+<br>
         <input type="radio" id="radioDos" name="tipo">Solo intereses
       </div>
       <input type="button" value="Calcular Reembolsos" onClick="logica()">

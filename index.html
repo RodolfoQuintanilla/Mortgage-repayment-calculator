@@ -7,8 +7,8 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <title>Frontend Mentor | Mortgage repayment calculator</title>
 
@@ -27,32 +27,42 @@
 
 <body>
   <article class="box">
+
+
     <section class="boxUno">
       <h1> Calculadora de hipotecas</h1>
-      <input type="button" value="Limpiar todo">
+      <input type="button" value="Limpiar todo" onClick ="limpiar()">
       <div>
         <label>Monto de la hipoteca</label>
         <br>
-        <input type="number" name="" id="">
+        <input type="number" name="" id="numeUno">
       </div>
 
       <div>
         <label>Plazo de la hipoteca</label>
         <br>
-        <input type="number" name="" id="">
+        <select id="select1" onChange="">
+          <option value="12">12 Meses</option>
+          <option value="24">24 Meses</option>
+          <option value="36">36 Meses</option>
+          <option value="48">48 Meses</option>
+        </select>
+        <br>
         <label>Tasa de interés</label>
-        <input type="number" name="" id="">
+        <br>
+        <input type="number" name="" id="numTres" disabled>
       </div>
 
       <div>
         <h2>Tipo de hipoteca</h2>
-        <input type="radio" name="" id="repayment"> Reembolso
-        <input type="radio" name="" id="only"> Solo intereses
+        <input type="radio" id="radioUno" name="tipo">Reembolso
+        
+        <input type="radio" id="radioDos" name="tipo">Solo intereses
       </div>
-      <input type="button" value="Calcular Reembolsos">
+      <input type="button" value="Calcular Reembolsos" onClick="logica()">
     </section>
     <!-- Empty results start -->
-
+    </form>
 
     <section class="boxDos">
       <div>
@@ -85,4 +95,5 @@
   </div>
 </body>
 <script src="js/caluladora.js"> </script>
+
 </html>

@@ -42,7 +42,7 @@
       </div>
 
       <div class="boxUno__info">
-        <div>
+        <div class="boxUno__div">
           <label>Plazo de la hipoteca</label>
           <br>
           <select id="select1">
@@ -63,7 +63,7 @@
         <h2>Tipo de hipoteca</h2>
 
         <input type="radio" id="radioUno" name="tipo">Reembolso
-<br>
+        <br>
         <input type="radio" id="radioDos" name="tipo">Solo intereses
       </div>
       <input type="button" value="Calcular Reembolsos" onClick="logica()">
@@ -72,24 +72,35 @@
     </form>
 
     <section class="boxDos">
-      <div>
-        <h3>Resultados que se muestran aquí</h3>
+      <div class="boxDos__cub">
+        <div class="boxDos__caratula">
+          <figure>
+            <img src="/assets/images/illustration-empty.svg" alt="">
+          </figure>
 
-        <p> Complete el formulario y haga clic en “calcular pagos” para ver cuáles serían sus pagos mensuales.</p>
+          <h3>Resultados que se muestran aquí</h3>
 
-        <!-- Empty results end -->
-      </div>
-      <!-- Completed results start -->
-      <div class="resultado">
-        <h4>Sus resultados</h4>
+          <p> Complete el formulario y haga clic en “calcular pagos” para ver cuáles serían sus pagos mensuales.</p>
 
-        <p> Sus resultados se muestran a continuación según la información que proporcionó. Para ajustar los resultados,
-          edite el formulario y haga clic nuevamente en “calcular pagos”.
-        </p>
-        <div>
-          Sus pagos mensuales
+          <!-- Empty results end -->
+        </div>
+        <!-- Completed results start -->
+        <div class="resultado">
+          <div class="resultado__text">
 
-          Total que pagará durante el plazo
+          <h4>Sus resultados</h4>
+
+          <p> Sus resultados se muestran a continuación según la información que proporcionó. Para ajustar los
+            resultados,
+            edite el formulario y haga clic nuevamente en “calcular pagos”.
+          </p>
+         
+
+          <div class="resultado__data" >
+          <h4>Sus pagos mensuales</h4>  
+<p class="resultado__pago">$Numero</p>
+         <p>Total que pagará durante el plazo</p>   
+          </div>
         </div>
       </div>
     </section>

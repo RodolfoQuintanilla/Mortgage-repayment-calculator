@@ -53,7 +53,7 @@ h5 {
   font-size: 1rem;
 }
 
-h1{
+h1 {
   margin: 0;
 }
 .boxUno h1 {
@@ -63,10 +63,10 @@ h1{
 
 /* cuadro cabeza uno  */
 .boxUno__head {
- display: flex;
- justify-content: space-between;
- margin-bottom: 25px;
- color: var(--Slate500);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  color: var(--Slate500);
 }
 
 .boxUno__head input {
@@ -76,9 +76,6 @@ h1{
   padding: 0;
 }
 
-
-
-
 /* cuadro cabeza uno Fin  */
 
 /* Monto de la hipoteca */
@@ -87,12 +84,73 @@ h1{
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px;
+  border: none;
+  border-top: 1px solid var(--Slate900);
+  border-bottom: 1px solid var(--Slate900);
+  border-right: 1px solid var(--Slate900);
+  border-radius: 0 5px 5px 0;
+}
+
+.boxUno__numeUno:focus {
+  outline: none;
+  border: 2px solid var(--Lime);
+  border-left: none;
+}
+
+.cuadro {
+  height: 100%;
+  background-color: var(--Slate300);
+  color: var(--Slate900);
+  width: 30px;
+  text-align: center;
+  font-size: 12px;
+  padding: 7.5px;
+  border-radius: 5px 0 0 5px;
+  border-top: 1px solid var(--Slate900);
+  border-left: 1px solid var(--Slate900);
+  border-bottom: 1px solid var(--Slate900);
 }
 /* Monto de la hipoteca fin */
 
 .boxUno__info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 10px 0 20px 0;
+}
+
+.boxUno__d1 select {
+  width: 120px;
+  border: none;
+  padding: 5px;
+  border-top: 1px solid var(--Slate900);
+  border-left: 1px solid var(--Slate900);
+  border-bottom: 1px solid var(--Slate900);
+  border-radius: 5px 0 0 5px;
+}
+.boxUno__d2 input {
+  width: 120px;
+  padding: 5px;
+  border-top: 1px solid var(--Slate900);
+  border-left: 1px solid var(--Slate900);
+  border-bottom: 1px solid var(--Slate900);
+  border-right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.linea {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.cuadro2 {
+  background-color: var(--Slate300);
+  padding: 7px;
+  border-radius: 05px 5px 0;
+  border-radius: 0 5px 5px 0;
+  border-top: 1px solid var(--Slate900);
+  border-right: 1px solid var(--Slate900);
+  border-bottom: 1px solid var(--Slate900);
 }
 
 /* cuadro Resultados */

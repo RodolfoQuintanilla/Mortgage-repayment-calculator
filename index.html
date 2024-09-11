@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -39,30 +38,34 @@
       <div>
         <label>Monto de la hipoteca</label>
         <br>
-        <div>$</div>
-        <input class="boxUno__numeUno" type="number" name="" id="numeUno">
+        <div class="linea">
+          <div class="cuadro">$</div>
+          <input class="boxUno__numeUno" type="number" name="" id="numeUno">
+        </div>
       </div>
 
       <div class="boxUno__info">
-       
-        <div class="boxUno__div">
+
+        <div class="boxUno__d1">
           <label>Plazo de la hipoteca</label>
           <br>
-           
+          <div class="linea">
           <select id="select1">
             <option value="12">12 Meses</option>
             <option value="24">24 Meses</option>
             <option value="36">36 Meses</option>
             <option value="48">48 Meses</option>
           </select>
-          <div>años</div>
+          <div class="cuadro2">años</div>
+          </div>
         </div>
-        <div>
+        <div class="boxUno__d2">
           <label>Tasa de interés</label>
           <br>
-          
+          <div class="linea">
           <input type="number" name="" id="numTres" disabled>
-          <div>%</div>
+          <div class="cuadro2">%</div>
+          </div>
         </div>
       </div>
 
@@ -73,7 +76,7 @@
         <br>
         <input type="radio" id="radioDos" name="tipo">Solo intereses
       </div>
-      <input type="button"  value="Calcular Reembolsos" onClick="logica()" >
+      <input type="button" value="Calcular Reembolsos" onClick="logica()">
     </section>
     <!-- Empty results start -->
     </form>
@@ -107,8 +110,8 @@
               <h4>Sus pagos mensuales</h4>
               <p class="resultado__Dato">$Numero</p>
               <p class="resultado__total">Total que pagará durante el plazo</p>
-           <div>Numero</div>
-           
+              <div>Numero</div>
+
             </div>
           </div>
         </div>

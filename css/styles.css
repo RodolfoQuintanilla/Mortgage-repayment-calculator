@@ -30,45 +30,59 @@ body {
   margin-top: 5%;
 }
 .boxUno,
-.boxDos {  
+.boxDos {
   background-color: var(--White);
   width: 400px;
- 
 }
-.boxUno{
+.boxUno {
   border-radius: 15px 0 0 15px;
-  padding: 20px;
+  padding: 30px;
+  color: var(--Slate700);
 }
 
-.boxDos{
+.boxDos {
   border-radius: 0 15px 15px 0;
 }
 
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 700;
   font-size: 1rem;
 }
 
-.boxUno h1{
+h1{
+  margin: 0;
+}
+.boxUno h1 {
   font-size: 1rem;
+  color: var(--Slate900);
 }
 
 /* cuadro cabeza uno  */
-.boxUno__head{
-  display: flex;
-  justify-content: space-between;
+.boxUno__head {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 25px;
+ color: var(--Slate500);
 }
 
-.boxUno__head input{
+.boxUno__head input {
   all: unset;
-
-  font-size: .7rem;
+  border-bottom: 1px dashed var(--Slate500);
+  font-size: 0.7rem;
+  padding: 0;
 }
+
+
+
 
 /* cuadro cabeza uno Fin  */
 
 /* Monto de la hipoteca */
-.boxUno__numeUno{
+.boxUno__numeUno {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -76,64 +90,75 @@ h1,h2,h3,h4,h5{
 }
 /* Monto de la hipoteca fin */
 
-.boxUno__info{
+.boxUno__info {
   display: flex;
   justify-content: space-around;
 }
 
-
-
-
-
-
-
-
-
-
 /* cuadro Resultados */
 
-.boxDos__cub{
-  background-color: var( --Slate900);
+.boxDos__cub {
+  background-color: var(--Slate900);
   height: 100%;
   padding: 1.8rem;
   color: var(--White);
-  border-radius:0 15px 15px 50px ;
+  border-radius: 0 15px 15px 50px;
   text-align: center;
 }
 
-.boxDos__cub img{
- width: 120px;
-
+.boxDos__cub img {
+  width: 120px;
 }
 
-.boxDos__cub p{
-font-size: 12px;
-margin-top: 10px;
+.boxDos__cub p {
+  font-size: 12px;
+  margin-top: 10px;
 }
 
-.resultado{
+.resultado {
   text-align: left;
-}
-
-
-.boxDos__caratula{
   display: none;
 }
 
-.resultado__data{
+.boxDos__caratula {
+  /* display: none; */
+}
+
+.resultado__data {
   border-top: 3px var(--Lime) solid;
   width: 100%;
   height: 250px;
   margin-top: 10px;
   padding: 20px;
   border-radius: 10px;
-  background-color: hsla(201, 56%, 16%, 0.89);
+  background-color: hsla(203, 52%, 5%, 0.26);
+  margin-top: 20px;
 }
 
-.resultado__data h4{
+.resultado__text h4 {
+  margin-bottom: 20px;
+}
+
+.resultado__data h4 {
   font-size: 15px;
 }
 
-.resultado__pago{
-  font-size: 2rem;
+.resultado__Dato {
+  color: var(--Lime);
+  font-size: 50px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.575);
+  padding: 20px 0;
+}
+
+.resultado__total {
+  margin: 20px 0 !important;
+}
+
+@media screen and (max-width: 800px) {
+  .boxUno {
+    border-radius: 20px 20px 0 0;
+  }
+  .boxDos__cub {
+    border-radius: 0 0 20px 20px;
+  }
 }

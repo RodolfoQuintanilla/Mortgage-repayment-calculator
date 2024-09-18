@@ -50,21 +50,21 @@
           <label>Plazo de la hipoteca</label>
           <br>
           <div class="linea">
-          <select id="select1">
-            <option value="12">12 Meses</option>
-            <option value="24">24 Meses</option>
-            <option value="36">36 Meses</option>
-            <option value="48">48 Meses</option>
-          </select>
-          <div class="cuadro2">años</div>
+            <select id="select1">
+              <option value="12">12 Meses</option>
+              <option value="24">24 Meses</option>
+              <option value="36">36 Meses</option>
+              <option value="48">48 Meses</option>
+            </select>
+            <div class="cuadro2">años</div>
           </div>
         </div>
         <div class="boxUno__d2">
           <label>Tasa de interés</label>
           <br>
           <div class="linea">
-          <input type="number" name="" id="numTres" disabled>
-          <div class="cuadro2">%</div>
+            <input type="number" name="" id="numTres" disabled>
+            <div class="cuadro2">%</div>
           </div>
         </div>
       </div>
@@ -72,11 +72,16 @@
       <div>
         <h2>Tipo de hipoteca</h2>
 
-        <input type="radio" id="radioUno" name="tipo">Reembolso
+        <div class="radios">
+          <input type="radio" id="radioUno" name="tipo"> Reembolso
+        </div>
         <br>
-        <input type="radio" id="radioDos" name="tipo">Solo intereses
+        <div class="radios">
+          <input class="radios" type="radio" id="radioDos" name="tipo"> Solo intereses
+        </div>
       </div>
-      <input type="button" value="Calcular Reembolsos" onClick="logica()">
+      <!-- <input class="btnCalcular"  type="button" value=" Calcular Reembolsos" onClick="logica()"> -->
+      <button onClick="logica()" class="btnCalcular"> <img src="assets/images/icon-calculator.svg" alt=""> Calcular Reembolsos</button>
     </section>
     <!-- Empty results start -->
     </form>

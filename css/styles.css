@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 :root {
   --Lime: hsl(61, 70%, 52%);
+  --Lime-lite: hsla(61, 70%, 52%, 0.5);
   --Red: hsl(4, 69%, 50%);
   --White: hsl(0, 0%, 100%);
   --Slate100: hsl(202, 86%, 94%);
@@ -51,11 +52,16 @@ h4,
 h5 {
   font-weight: 700;
   font-size: 1rem;
+  margin-bottom: 10px;
 }
 
 h1 {
   margin: 0;
 }
+
+
+
+
 .boxUno h1 {
   font-size: 1rem;
   color: var(--Slate900);
@@ -153,6 +159,26 @@ h1 {
   border-bottom: 1px solid var(--Slate900);
 }
 
+.radios {
+  border: 1px solid var(--Slate900);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btnCalcular {
+  all: unset;
+  width: 150px;
+  background-color: var(--Lime-lite);
+  font-size: 12px;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  align-items: center;
+}
+.btnCalcular img {
+  width: 15px;
+}
+
 /* cuadro Resultados */
 
 .boxDos__cub {
@@ -166,11 +192,14 @@ h1 {
 
 .boxDos__cub img {
   width: 120px;
+  margin-top: 15%;
+  margin-bottom: 20px;
 }
 
 .boxDos__cub p {
   font-size: 12px;
   margin-top: 10px;
+  color: var(--Slate300);
 }
 
 .resultado {
